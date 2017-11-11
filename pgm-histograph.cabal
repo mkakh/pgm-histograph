@@ -1,0 +1,38 @@
+name:                pgm-histograph
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/mkakh/pgm-histograph#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Author name mkakh
+maintainer:          akhs3214@gmail.com
+copyright:           2017 Author name mkakh
+category:            graphics
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Lib
+  build-depends:       base >= 4.7 && < 5
+                     , bytestring >=0.10
+                     , matplotlib >= 0.5
+                     , integer-logarithms >= 1.0
+  default-language:    Haskell2010
+
+executable pgm-histograph-exe
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , bytestring >=0.10
+                     , matplotlib >= 0.5
+                     , integer-logarithms >= 1.0
+                     , pgm-histograph
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/mkakh/pgm-histograph
