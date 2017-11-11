@@ -3,7 +3,7 @@ version:             0.1.0.0
 -- synopsis:
 -- description:
 homepage:            https://github.com/mkakh/pgm-histograph#readme
-license:             BSD3
+license:             MIT
 license-file:        LICENSE
 author:              Author name mkakh
 maintainer:          akhs3214@gmail.com
